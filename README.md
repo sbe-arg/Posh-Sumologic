@@ -1,4 +1,4 @@
-# Posh-Datadog
+# Posh-Sumologic
 Hand commands for Sumologic.
 
 # To test:
