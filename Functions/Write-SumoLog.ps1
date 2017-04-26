@@ -35,7 +35,7 @@ function Write-SumoLog {
       }
   }
   process {
-      $Collector = $script:CacheSumologicCollectors | Where-Object {$_.name -eq "$CollectorName"}
+      $Collector = $script:CacheSumologicCollectors | Where-Object {$_.name -like "*$CollectorName*"}
       $CollectorUrl = ($Collector | Get-Source).url
       Invoke-WebRequest "$CollectorUrl'?[$Comment]" -UseBasicParsing -Verbose
     }
