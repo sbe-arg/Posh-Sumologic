@@ -11,12 +11,12 @@ Write-Verbose 'Doing stuff...'
 
   if(-not $env:SumoKey){
     Write-Warning "Cannot find Sumologic Key on this system."
-    $storekey = Read-Host "Enter your user Sumologic Key:"
+    $storekey = Read-Host "Enter your user Sumologic Key"
     [Environment]::SetEnvironmentVariable("SumoKey", "$storekey", "User")
   }
   if(-not $env:SumoID){
     Write-Warning "Cannot find Sumoloc ID on this system."
-    $storeid = Read-Host "Enter your user Sumologic ID:"
+    $storeid = Read-Host "Enter your user Sumologic ID"
     [Environment]::SetEnvironmentVariable("SumoID", "$storeid", "User")
   }
 
