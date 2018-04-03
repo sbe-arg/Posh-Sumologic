@@ -10,7 +10,7 @@
 RootModule = 'Posh-Sumologic.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.2.0'
+ModuleVersion = '0.0.3.0'
 
 # ID used to uniquely identify this module
 GUID = '9f4dd142-f9e5-42c4-b944-42e815b274cc'
@@ -64,7 +64,11 @@ Description = 'Sumologic Posh Module'
 # NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = '*'
+FunctionsToExport = @(
+  'Invoke-SumoSearch'
+  'Use-SumoCredential'
+  'Write-SumoLog'
+)
 
 # Cmdlets to export from this module
 CmdletsToExport = @()
