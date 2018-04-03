@@ -1,28 +1,19 @@
 # Posh-Sumologic
 Hand commands for Sumologic.
 
-# To test/debug:
+## To test/debug:
 Download module -> run Posh-Sumologic.sandbox.ps1 to load.
 
-### Step One: Install psget
+## Install via PowershellLibrary
 ```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/psget/psget/master/GetPsGet.ps1") | iex
+PowerShellGet\Install-Module Posh-Sumologic -Scope CurrentUser
+```
+### Or install/update via PsGet
+```powershell
+psget\Install-Module -ModuleUrl https://github.com/sbe-arg/Posh-Sumologic/archive/master.zip # -update
 ```
 
-
-### Step Two: Install Posh-Sumologic
-```powershell
-psget\Install-Module -ModuleUrl https://github.com/sbe-arg/Posh-Sumologic/archive/master.zip
-```
-
-## Upgrading
-From time-to-time *Posh-Sumologic* will be updated to include new features.
-To update *Posh-Sumologic*, execute the following:
-```powershell
-psget\Install-Module -ModuleUrl https://github.com/sbe-arg/Posh-Sumologic/archive/master.zip -Update
-```
-
+## cmdlets
 ```powershell
 # Open a sumo session:
 Use-SumoCredential -Zone US2
