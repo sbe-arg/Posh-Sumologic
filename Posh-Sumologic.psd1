@@ -10,7 +10,7 @@
 RootModule = 'Posh-Sumologic.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.4.0'
+ModuleVersion = '0.0.4'
 
 # ID used to uniquely identify this module
 GUID = '9f4dd142-f9e5-42c4-b944-42e815b274cc'
