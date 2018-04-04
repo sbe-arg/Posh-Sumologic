@@ -1,5 +1,7 @@
-# Posh-Sumologic
-Hand commands for Sumologic.
+Posh-Sumologic module
+===================
+
+[![Build status](https://ci.appveyor.com/api/projects/status/rgp57t50niffdl42?svg=true)](https://ci.appveyor.com/project/sbe-arg/posh-sumologic)
 
 ## To test/debug:
 Download module -> run Posh-Sumologic.sandbox.ps1 to load.

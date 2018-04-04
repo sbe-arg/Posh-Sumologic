@@ -1,5 +1,5 @@
 Clear-Host
-Remove-Module Posh-Datadog -Force -ErrorAction SilentlyContinue
+Remove-Module Posh-Sumologic -Force -ErrorAction SilentlyContinue
 Import-Module $PSScriptRoot -Verbose
 cd $PSScriptRoot
 Get-Module PSScriptAnalyzer
