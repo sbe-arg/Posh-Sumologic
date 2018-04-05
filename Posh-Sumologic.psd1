@@ -10,7 +10,7 @@
 RootModule = 'Posh-Sumologic.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.4'
+ModuleVersion = '0.0.5'
 
 # ID used to uniquely identify this module
 GUID = '9f4dd142-f9e5-42c4-b944-42e815b274cc'
@@ -25,7 +25,7 @@ CompanyName = 'SBE'
 Copyright = '(c) 2017. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Sumologic Posh Module'
+Description = 'Sumologic powershell module wrapper of official SDK.'
 
 # Minimum version of the Windows PowerShell engine required by this module
 # PowerShellVersion = ''
@@ -100,7 +100,7 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/sbe-arg/Posh-Sumologic'
 
         # A URL to an icon representing this module.
         # IconUri = ''
